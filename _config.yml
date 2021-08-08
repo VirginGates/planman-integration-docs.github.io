@@ -1,13 +1,12 @@
 # ----
 # Site
----
+
 title: Aviator
 description: Jekyll template for API documentation.
 url: integration.planman.io
 google_analytics_key:
 permalink: pretty
-baseurl:
----
+
 # -----
 # Build
 
