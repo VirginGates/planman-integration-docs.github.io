@@ -6,7 +6,9 @@ description: Jekyll template for API documentation.
 url: https://integration.planman.io/
 google_analytics_key:
 permalink: pretty
-baseurl: https://integration.planman.io/
+
+site:
+  baseurl: https://integration.planman.io/
 
 # -----
 # Build
