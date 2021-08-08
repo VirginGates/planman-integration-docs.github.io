@@ -3,12 +3,10 @@
 
 title: Aviator
 description: Jekyll template for API documentation.
-url: https://integration.planman.io/
+url: integration.planman.io
 google_analytics_key:
 permalink: pretty
-
-site:
-  baseurl: https://integration.planman.io/
+baseurl: integration.planman.io
 
 # -----
 # Build
