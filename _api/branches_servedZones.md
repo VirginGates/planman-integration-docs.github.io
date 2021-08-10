@@ -1,6 +1,6 @@
 ---
 title: /api/v1/branches/{id}/served-zones
-name: Served Zones
+name: List Served Zones
 position_number: 1.2
 type: get
 description: Retrieve a list of served zones for specific branch
