@@ -1,11 +1,12 @@
 ---
 title: Getting Started
+name: Getting Started
 position_number: 1
 parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
+  The Planman API can be used to integrate 
 
   This API document is designed for those interested in developing for our platform.
 

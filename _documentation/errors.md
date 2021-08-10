@@ -1,5 +1,6 @@
 ---
 title: Errors
+name: Errors
 position_number: 3
 parameters:
   - name:
@@ -8,16 +9,29 @@ content_markdown: |-
   | Code | Name | Description |
   | --- | --- | --- |
   | 200 | OK | Success |
-  | 201 | Created | Creation Successful |
-  | 400 | Bad Request | We could not process that action |
-  | 403 | Forbidden | We couldn't authenticate you |
+  | 400 | Bad Request | The server could not process the request |
+  | 401 | Unauthorized | The request did not include an authentication token or the authentication token was expired |
+  | 404 | Not Found | The server could not find the requested resource |
+  | 500 | Internal Server Error | The server encountered an unexpected condition |
 
   All errors will return JSON in the following format:
 left_code_blocks:
   - code_block: |-
       {
-        "error": true,
-        "message": "error message here"
+        "stackTraceId": 2165529378315486700,
+        "args": {
+          "additionalProp1": {}
+        },
+        "devDetails": "string",
+        "propagated": false,
+        "trace": {
+          "exceptionClass": "string",
+          "message": "string",
+          "stackTrace": [
+            "string"
+          ]
+        },
+        "code": "$EXCEPTION_CODE"
       }
     title: Response
     language: json

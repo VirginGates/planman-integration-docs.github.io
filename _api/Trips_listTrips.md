@@ -4,7 +4,7 @@ name: List Trips
 position_number: 1.6
 type: get
 description: Retrieve a list of trips filtered by criteria and/or sorted by one of trips's properties (e.g creationDate) in asc/desc order
-parameters:
+query_parameters:
   - name: criteria
     content: String
   - name: sortBy
@@ -17,16 +17,10 @@ content_markdown: |-
 
   Sign in as a branch user.
 left_code_blocks:
-  - code_bl nj ock: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
+  - code_block: |-
+      curl "https://srvbeta.virgingates.com/api/v1/trips?sortType=asc&criteria={"vendorBranchId":1440482015196672,"status":["CANCELLED"]}&sortBy="  -H "Authorization: Bearer $BEARER_TOKEN"
+    title: cURL
+    language: powershell
 right_code_blocks:
   - code_block: |-
       [

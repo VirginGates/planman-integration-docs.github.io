@@ -1,10 +1,10 @@
 ---
-title: /api/v1/branches/{id}/served-zones
+title: /api/v1/branches/:id/served-zones
 name: List Served Zones
 position_number: 1.2
 type: get
 description: Retrieve a list of served zones for specific branch
-parameters:
+path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
@@ -14,15 +14,9 @@ content_markdown: |-
   Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
+      curl "https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/served-zones" -H "Authorization: Bearer $BEARER_TOKEN"
+    title: cURL
+    language: powershell
 right_code_blocks:
   - code_block: |-
       {

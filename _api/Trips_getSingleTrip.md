@@ -1,10 +1,10 @@
 ---
-title: /api/v1/trips/{id}
+title: /api/v1/trips/:id
 name: Retrieve a Trip
 position_number: 1.4
 type: get
 description: Retreive the trip's info using id
-parameters:
+path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
@@ -13,16 +13,10 @@ content_markdown: |-
 
   Sign in as a branch user.
 left_code_blocks:
-  - code_bl nj ock: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
+  - code_block: |-
+      curl "https://srvbeta.virgingates.com/api/v1/trips/9921381276774878" -H "Authorization: Bearer $BEARER_TOKEN"
+    title: cURL
+    language: powershell
 right_code_blocks:
   - code_block: |-
       {

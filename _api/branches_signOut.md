@@ -1,10 +1,10 @@
 ---
-title: /api/v1/branches/{id}/sign-out
+title: /api/v1/branches/:id/sign-out
 name: Sign Out
 position_number: 1.1
 type: post
 description: Sign Out
-parameters:
+path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
@@ -13,16 +13,10 @@ content_markdown: |-
 
   Sign out as a branch user.
 left_code_blocks:
-  - code_block: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
+  - code_block: |- 
+      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/sign-out -H "Authorization: Bearer $BEARER_TOKEN" 
+    title: cURL
+    language: powershell
 right_code_blocks:
   - code_block: |-
       {

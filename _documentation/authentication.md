@@ -1,5 +1,6 @@
 ---
 title: Authentication
+name: Authentication
 position_number: 2
 parameters:
   - name:

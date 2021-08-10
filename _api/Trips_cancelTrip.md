@@ -1,12 +1,13 @@
 ---
-title: /api/v1/trips/{id}/cancel
+title: /api/v1/trips/:id/cancel
 name: Cancel a Trip
 position_number: 1.5
 type: post
 description: Cancel Trip
-parameters:
+path_parameters:
   - name: id
     content: Integer
+body_parameters:
   - name: branchId
     content: Integer
   - name: cancellationReason
@@ -17,16 +18,10 @@ content_markdown: |-
 
   Sign in as a branch user.
 left_code_blocks:
-  - code_block: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
+  - code_block: |- 
+        curl -X POST https://srvbeta.virgingates.com/api/v1/trips/9921381276774878/cancel -H "Authorization: Bearer $BEARER_TOKEN" -H "Content-type: application/json" -d '{"branchId": 2165529378315486700, "cancellationReason": "Order Taking Too Long"}'
+    title: cURL
+    language: powershell
 right_code_blocks:
   - code_block: |-
       {
