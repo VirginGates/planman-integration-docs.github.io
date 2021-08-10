@@ -1,7 +1,7 @@
 ---
 title: /api/v1/trips
 name: List Trips
-position_number: 1.1
+position_number: 1.6
 type: get
 description: Retrieve a list of trips filtered by criteria and/or sorted by one of trips's properties (e.g creationDate) in asc/desc order
 parameters:
@@ -29,9 +29,37 @@ left_code_blocks:
     language: javascript
 right_code_blocks:
   - code_block: |-
-      {
-          "tripStatus": "CANCELLED"
-      }
+      [
+        {
+          "id": 9921381276774878,
+          "vendorBranch": {
+            "id": 2165529378315486700,
+            "label": "McDonald Manial",
+            "vendorId": 2165529378315486700
+          },
+          "pilot": {
+            "id": 2165529378315486700,
+            "mobileNo": "0102312381",
+            "fullName": "Bakaka Dassa",
+            "lastKnownLocation": {
+              "type": "Point",
+              "coordinates": [
+                -1.43,
+                31.3
+              ]
+            },
+            "status": "UNAVAILABLE"
+          },
+          "status": "CANCELLED",
+          "assignmentDate": "2018-09-01T18:04:53.178Z",
+          "pendingCollectionDate": "2018-09-01T18:04:53.178Z",
+          "creationDate": "2018-09-01T18:04:53.178Z",
+          "eta": 600,
+          "slaTier": "LESS_THAN_5_MINUTES",
+          "maxAllowedTasksCount": 4,
+          "requestedTasksCount": 4
+        }
+      ]
     title: Response
     language: json
   - code_block: |-

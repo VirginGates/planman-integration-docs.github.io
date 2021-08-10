@@ -1,7 +1,7 @@
 ---
 title: /api/v1/branches/{id}/request-pilot
-name: Request Pilot
-position_number: 1.1
+name: Request a Pilot
+position_number: 1.3
 type: post
 description: Request Pilot
 parameters:

@@ -1,7 +1,7 @@
 ---
 title: /api/v1/trips/{id}/cancel
-name: Cancel Trip
-position_number: 1.1
+name: Cancel a Trip
+position_number: 1.5
 type: post
 description: Cancel Trip
 parameters:

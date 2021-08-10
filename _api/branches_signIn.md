@@ -1,7 +1,7 @@
 ---
 title: /api/v1/branches/sign-in
 name: Sign In
-position_number: 1.1
+position_number: 1.0
 type: post
 description: Sign In
 parameters:

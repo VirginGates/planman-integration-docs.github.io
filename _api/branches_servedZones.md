@@ -1,7 +1,7 @@
 ---
 title: /api/v1/branches/{id}/served-zones
 name: Served Zones
-position_number: 1.1
+position_number: 1.2
 type: get
 description: Retrieve a list of served zones for specific branch
 parameters:
@@ -26,9 +26,43 @@ left_code_blocks:
 right_code_blocks:
   - code_block: |-
       {
-          "tripId": 9921381276774878,
-          "taskId": 9921381276774878,
-          "maxAllowedTasksCount": 3
+        "branchLocation": {
+          "type": "Point",
+          "coordinates": [
+            -1.43,
+            31.3
+          ]
+        },
+        "hubLocation": {
+          "type": "Point",
+          "coordinates": [
+            -1.43,
+            31.3
+          ]
+        },
+        "zones": [
+          {
+            "zoneId": 2165529378315486700,
+            "zoneName": {
+              "en": "Main Menu",
+              "ar": "القائمة الرئيسية"
+            },
+            "rateName": "rate1",
+            "rateValue": {
+              "amount": 31.01,
+              "currency": "EGP"
+            },
+            "polygon": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  -1.43,
+                  31.3
+                ]
+              ]
+            }
+          }
+        ]
       }
     title: Response
     language: json
