@@ -16,9 +16,9 @@ content_markdown: |-
   Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
-      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/sign-in -H "Authorization: Bearer $BEARER_TOKEN" -H "Content-type: application/json" -d '{"code": "1234567", "notificationToken": "cjNFU9Cvavk:APA91bELJxqwc8h8FhHkZmiua-0TzLSfYGXBDFu0eBA_u2f_jLptfq_7881kd1F10TkX7ksGMl2gvU1FpCAtBrQvDUwpcIx90IPj9VSVpil7F_NhgO7twwWctevngUrULA8tKo2wTIho"}'
+      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567", "notificationToken": "cjNFU9Cvavk:APA91bELJxqwc8h8FhHkZmiua-0TzLSfYGXBDFu0eBA_u2f_jLptfq_7881kd1F10TkX7ksGMl2gvU1FpCAtBrQvDUwpcIx90IPj9VSVpil7F_NhgO7twwWctevngUrULA8tKo2wTIho"}'
     title: cURL
-    language: powershell
+    language: bash
 right_code_blocks:
   - code_block: |-
       {
@@ -46,7 +46,7 @@ right_code_blocks:
                 "string"
             ]
         },
-        "code": "InactiveVendorBranchException"
+        "code": "WebClientOperationException"
       }
     title: Error
     language: json

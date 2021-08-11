@@ -14,9 +14,9 @@ content_markdown: |-
   Sign in as a branch user.
 left_code_blocks:
   - code_block: |- 
-      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/request-pilot -H "Authorization: Bearer $BEARER_TOKEN"'
+      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/request-pilot -H "Authorization: Bearer $ACCESS_TOKEN"'
     title: cURL
-    language: powershell
+    language: bash
 right_code_blocks:
   - code_block: |-
       {
@@ -41,7 +41,7 @@ right_code_blocks:
                 "string"
             ]
         },
-        "code": "InactiveVendorBranchException"
+        "code": "WebClientOperationException"
       }
     title: Error
     language: json

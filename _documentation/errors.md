@@ -5,12 +5,12 @@ position_number: 3
 parameters:
   - name:
     content:
-content_markdown: |-
+content_markdown: |- 
   | Code | Name | Description |
   | --- | --- | --- |
   | 200 | OK | Success |
   | 400 | Bad Request | The server could not process the request |
-  | 401 | Unauthorized | The request did not include an authentication token or the authentication token was expired |
+  | 401 | Unauthorized | The request did not include an access token or the access token was expired |
   | 404 | Not Found | The server could not find the requested resource |
   | 500 | Internal Server Error | The server encountered an unexpected condition |
 

@@ -18,9 +18,9 @@ content_markdown: |-
   Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
-      curl "https://srvbeta.virgingates.com/api/v1/trips?sortType=asc&criteria={"vendorBranchId":1440482015196672,"status":["CANCELLED"]}&sortBy="  -H "Authorization: Bearer $BEARER_TOKEN"
+      curl "https://srvbeta.virgingates.com/api/v1/trips?sortType=asc&criteria={"vendorBranchId":1440482015196672,"status":["CANCELLED"]}&sortBy="  -H "Authorization: Bearer $ACCESS_TOKEN"
     title: cURL
-    language: powershell
+    language: bash
 right_code_blocks:
   - code_block: |-
       [
@@ -28,13 +28,13 @@ right_code_blocks:
           "id": 9921381276774878,
           "vendorBranch": {
             "id": 2165529378315486700,
-            "label": "McDonald Manial",
+            "label": "Branch1",
             "vendorId": 2165529378315486700
           },
           "pilot": {
             "id": 2165529378315486700,
             "mobileNo": "0102312381",
-            "fullName": "Bakaka Dassa",
+            "fullName": "Name",
             "lastKnownLocation": {
               "type": "Point",
               "coordinates": [
@@ -71,7 +71,7 @@ right_code_blocks:
                 "string"
             ]
         },
-        "code": "InactiveVendorBranchException"
+        "code": "WebClientOperationException"
       }
     title: Error
     language: json

@@ -6,11 +6,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  The Planman API can be used to integrate 
-
-  This API document is designed for those interested in developing for our platform.
-
-  This API is still under development and will evolve.
+  This documentation provides a guide for integrating and working with the Planman REST API. Through the API, you can utilize our on-demand delivery services.
 
   You'll succeed if you do this.
   {: .success }
