@@ -3,17 +3,16 @@ title: /api/v1/branches/sign-in
 name: Sign In
 position_number: 1.0
 type: post
-description: Sign In
+description: Allows you to sign in to the branch dashboard using your branch code.
 body_parameters:
   - name: code
     content: String
   - name: notificationToken
     content: String
 content_markdown: |-
-  The branch user will be successfully authenticated
+  You will be successfully authenticated and can perform calls to other endpoints.
   {: .success}
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
       curl -X POST https://srvbeta.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567", "notificationToken": "cjNFU9Cvavk:APA91bELJxqwc8h8FhHkZmiua-0TzLSfYGXBDFu0eBA_u2f_jLptfq_7881kd1F10TkX7ksGMl2gvU1FpCAtBrQvDUwpcIx90IPj9VSVpil7F_NhgO7twwWctevngUrULA8tKo2wTIho"}'

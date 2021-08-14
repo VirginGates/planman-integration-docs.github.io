@@ -6,16 +6,17 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  This documentation provides a guide for integrating and working with the Planman REST API. Through the API, you can utilize our on-demand delivery services.
+  This documentation provides a guide for integrating and working with the Planman REST API. After successful integration, you can utilize our ......
+  
+  Planman API provides you the ability to request pilots, retrieve and cancel trips as well as view all the zones served by your branches.
+  
+  All endpoints of the API use standard HTTP response codes and return JSON-encoded responses.
 
-  You'll succeed if you do this.
+  You'll succeed if this happens.
   {: .success }
 
   Here's some useful information.
   {: .info }
-
-  Something may not happen if you try and do this.
-  {: .warning }
 
   Something bad will happen if you do this.
   {: .error }

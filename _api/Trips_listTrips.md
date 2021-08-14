@@ -3,7 +3,7 @@ title: /api/v1/trips
 name: List Trips
 position_number: 1.6
 type: get
-description: Retrieve a list of trips filtered by criteria and/or sorted by one of trips's properties (e.g creationDate) in asc/desc order
+description: Returns various information about multiple trips filtered by criteria and/or sorted by one of trips's properties in ascending/descending order.
 query_parameters:
   - name: criteria
     content: String
@@ -12,10 +12,9 @@ query_parameters:
   - name: sortType
     content: String
 content_markdown: |-
-  The trips will be displayed.
-  {: .success}
+  Returns a maximum of 800 trips.
+  {: .info }
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
       curl "https://srvbeta.virgingates.com/api/v1/trips?sortType=asc&criteria={"vendorBranchId":1440482015196672,"status":["CANCELLED"]}&sortBy="  -H "Authorization: Bearer $ACCESS_TOKEN"

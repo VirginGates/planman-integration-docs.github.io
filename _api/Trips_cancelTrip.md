@@ -3,7 +3,7 @@ title: /api/v1/trips/:id/cancel
 name: Cancel a Trip
 position_number: 1.5
 type: post
-description: Cancel Trip
+description: Cancels the trip specified by the requested ID.
 path_parameters:
   - name: id
     content: Integer
@@ -16,7 +16,6 @@ content_markdown: |-
   The trip will be cancelled.
   {: .success}
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |- 
         curl -X POST https://srvbeta.virgingates.com/api/v1/trips/9921381276774878/cancel -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-type: application/json" -d '{"branchId": 2165529378315486700, "cancellationReason": "Order Taking Too Long"}'

@@ -3,15 +3,14 @@ title: /api/v1/branches/:id/served-zones
 name: List Served Zones
 position_number: 1.2
 type: get
-description: Retrieve a list of served zones for specific branch
+description: Retrieves a list of zones that are served by the branch specified by the requested ID .
 path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
-  A pilot will be requested for the order.
+  A list of served zones will be displayed.
   {: .success}
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
       curl "https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/served-zones" -H "Authorization: Bearer $ACCESS_TOKEN"
@@ -38,8 +37,8 @@ right_code_blocks:
           {
             "zoneId": 2165529378315486700,
             "zoneName": {
-              "en": "Main Menu",
-              "ar": "القائمة الرئيسية"
+              "en": "El Merghany",
+              "ar": "الميرغني"
             },
             "rateName": "rate1",
             "rateValue": {

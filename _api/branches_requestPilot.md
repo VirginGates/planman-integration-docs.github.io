@@ -3,7 +3,7 @@ title: /api/v1/branches/:id/request-pilot
 name: Request a Pilot
 position_number: 1.3
 type: post
-description: Request Pilot
+description: Requests a pilot for the branch specified by the requested ID and creates a new trip.
 path_parameters:
   - name: id
     content: Integer
@@ -11,7 +11,6 @@ content_markdown: |-
   A pilot will be requested for the order.
   {: .success}
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |- 
       curl -X POST https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/request-pilot -H "Authorization: Bearer $ACCESS_TOKEN"'

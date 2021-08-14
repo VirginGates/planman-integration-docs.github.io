@@ -3,7 +3,7 @@ title: /api/v1/trips/:id
 name: Retrieve a Trip
 position_number: 1.4
 type: get
-description: Retreive the trip's info using id
+description: Returns various information about a single trip specified by the requested ID.
 path_parameters:
   - name: id
     content: Integer
@@ -11,7 +11,6 @@ content_markdown: |-
   The trip's info will be displayed.
   {: .success}
 
-  Sign in as a branch user.
 left_code_blocks:
   - code_block: |-
       curl "https://srvbeta.virgingates.com/api/v1/trips/9921381276774878" -H "Authorization: Bearer $ACCESS_TOKEN"
