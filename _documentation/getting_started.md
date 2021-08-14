@@ -1,25 +1,14 @@
 ---
 title: Getting Started
 name: Getting Started
-position_number: 1
+position_number: 2
 parameters:
   - name:
     content:
 content_markdown: |-
-  This documentation provides a guide for integrating and working with the Planman REST API. After successful integration, you can utilize our ......
+  To get you started, the Planman team will create a branch entity for each of your branches. Each branch will have a unique code that can be used for authentication.
   
-  Planman API provides you the ability to request pilots, retrieve and cancel trips as well as view all the zones served by your branches.
-  
-  All endpoints of the API use standard HTTP response codes and return JSON-encoded responses.
-
-  You'll succeed if this happens.
-  {: .success }
-
-  Here's some useful information.
-  {: .info }
-
-  Something bad will happen if you do this.
-  {: .error }
+  Furthermore, each branch will be assigned to a certain delivery hub, where each hub serves a variety of zones. In other words, each hub can deliver orders to those specific zones.
 left_code_blocks:
   - code_block:
     title:

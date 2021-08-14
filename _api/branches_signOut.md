@@ -8,8 +8,6 @@ path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
-  The branch user will be successfully signed out
-  {: .success}
 
 left_code_blocks:
   - code_block: |- 

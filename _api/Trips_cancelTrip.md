@@ -13,8 +13,6 @@ body_parameters:
   - name: cancellationReason
     content: String
 content_markdown: |-
-  The trip will be cancelled.
-  {: .success}
 
 left_code_blocks:
   - code_block: |- 

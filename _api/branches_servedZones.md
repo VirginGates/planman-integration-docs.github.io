@@ -8,8 +8,6 @@ path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
-  A list of served zones will be displayed.
-  {: .success}
 
 left_code_blocks:
   - code_block: |-

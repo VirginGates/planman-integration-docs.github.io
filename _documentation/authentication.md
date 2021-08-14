@@ -1,7 +1,7 @@
 ---
 title: Authentication
 name: Authentication
-position_number: 2
+position_number: 3
 parameters:
   - name:
     content:
@@ -19,14 +19,8 @@ left_code_blocks:
     title: 
     language: bash
 right_code_blocks:
-  - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: JQuery
-    language: javascript
-  - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
-    title: Curl
-    language: bash
+- code_block: |-
+    curl -X POST https://srvbeta.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567"}'
+  title: cURL
+  language: bash
 ---

@@ -8,8 +8,6 @@ path_parameters:
   - name: id
     content: Integer
 content_markdown: |-
-  A pilot will be requested for the order.
-  {: .success}
 
 left_code_blocks:
   - code_block: |- 
