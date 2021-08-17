@@ -20,39 +20,16 @@ title: API Docs
 					<p class="description">{{ doc.description }}</p>
 				{% endif %}
 
-				{% if doc.path_parameters and doc.path_parameters[0].name %}
+				{% if doc.parameters and doc.parameters[0].name %}
 						<h6>Path Parameters</h6>
 						<dl>
-								{% for parameter in doc.path_parameters %}
+								{% for parameter in doc.parameters %}
 										<dt>{{ parameter.name }}</dt>
 										<dd>{{ parameter.content }}</dd>
 								{% endfor %}
 						</dl>
 				<br>
 				{% endif %}
-
-				{% if doc.body_parameters and doc.body_parameters[0].name %}
-				<h6>Body Parameters</h6>
-				<dl>
-					{% for parameter in doc.body_parameters %}
-					<dt>{{ parameter.name }}</dt>
-					<dd>{{ parameter.content }}</dd>
-					{% endfor %}
-				</dl>
-				<br>
-				{% endif %}
-
-				{% if doc.query_parameters and doc.query_parameters[0].name %}
-				<h6>Query Parameters</h6>
-				<dl>
-					{% for parameter in doc.query_parameters %}
-					<dt>{{ parameter.name }}</dt>
-					<dd>{{ parameter.content }}</dd>
-					{% endfor %}
-				</dl>
-				<br>
-				{% endif %}
-
 
 				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
 

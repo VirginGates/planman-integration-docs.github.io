@@ -4,11 +4,7 @@ name: List Trips
 position_number: 1.5
 type: get
 description: Returns various information about multiple trips filtered by criteria and/or sorted by one of trips's properties in ascending/descending order.
-query_parameters:
-  - name: 
-    content: 
-  - name: 
-    content: 
+parameters:
   - name: 
     content:
 content_markdown: |-

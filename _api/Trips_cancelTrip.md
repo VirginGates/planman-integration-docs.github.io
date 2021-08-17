@@ -4,14 +4,9 @@ name: Cancel a Trip
 position_number: 1.6
 type: post
 description: Cancels the trip specified by the requested ID.
-path_parameters:
+parameters:
   - name: 
-    content: 
-body_parameters:
-  - name: 
-    content: 
-  - name: 
-    content: 
+    content:
 content_markdown: |-
   __Path Parameters__
 

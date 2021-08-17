@@ -4,7 +4,7 @@ name: Retrieve a Trip
 position_number: 1.4
 type: get
 description: Returns various information about a single trip specified by the requested ID.
-path_parameters:
+parameters:
   - name: 
     content: 
 content_markdown: |-

@@ -4,7 +4,7 @@ name: Sign Out
 position_number: 1.1
 type: post
 description: Allows you to sign out using your branch ID.
-path_parameters:
+parameters:
   - name:
     content: 
 content_markdown: |-
