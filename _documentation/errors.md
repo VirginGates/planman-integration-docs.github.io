@@ -12,6 +12,7 @@ content_markdown: |-
   | 400 | Bad Request | The server could not process the request |
   | 401 | Unauthorized | The request did not include an access token or the access token was expired |
   | 404 | Not Found | The server could not find the requested resource |
+  | 409 | Conflict | The request could not be processed due to a conflict in the current state of the resource |
   | 500 | Internal Server Error | The server encountered an unexpected condition |
 
   All errors will return JSON in the following format:
@@ -24,13 +25,13 @@ left_code_blocks:
           "additionalProp2": {},
           "additionalProp3": {},
         },
-        "devDetails": "string",
+        "devDetails": "",
         "propagated": false,
         "trace": {
-          "exceptionClass": "string",
-          "message": "string",
+          "exceptionClass": "",
+          "message": "",
           "stackTrace": [
-            "string"
+            ""
           ]
         },
         "code": "$EXCEPTION_CODE"

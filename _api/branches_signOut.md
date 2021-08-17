@@ -12,17 +12,17 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Integer | true | ......................... |
+  | id | Long | true | ......................... |
 
   __Response Fields__
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Integer | ......................... |
+  | id | Long | ......................... |
 
 left_code_blocks:
   - code_block: |- 
-      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/2165529378315486700/sign-out -H "Authorization: Bearer $ACCESS_TOKEN" 
+      curl -X POST https://srvstg.virgingates.com/api/v1/branches/2165529378315486700/sign-out -H "Authorization: Bearer $ACCESS_TOKEN" 
     title: cURL
     language: bash
 right_code_blocks:

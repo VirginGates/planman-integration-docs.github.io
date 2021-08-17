@@ -18,10 +18,10 @@ content_markdown: |-
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Integer | ........................ |
+  | id | Lonf | ........................ |
   | label | String | ........................ |
   | code | String |  ........................  |
-  | vendorId | Integer | ........................ |
+  | vendorId | Long | ........................ |
   | token | String | ........................ |
   | onlineOrderingFlag | Boolean | ........................ |
 
@@ -30,10 +30,16 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |-
-      curl -X POST https://srvbeta.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567"}'
+      curl -X POST https://srvstg.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567"}'
     title: cURL
     language: bash
 right_code_blocks:
+  - code_block: |-
+      {
+        "code": "147657930"
+      }
+    title: Request
+    language: json
   - code_block: |-
       {
         "id": 2165529378315486700,

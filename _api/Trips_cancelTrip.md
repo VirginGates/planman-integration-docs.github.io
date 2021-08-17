@@ -12,13 +12,13 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | integer | true |  ......................... |
+  | id | Long | true |  ......................... |
 
   __Body Parameters__
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | branchId | Integer | true |  ......................... |
+  | branchId | Long | true |  ......................... |
   | cancellationReason | String | true |  ......................... |
 
   __Response Fields__
@@ -29,10 +29,17 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |- 
-        curl -X POST https://srvbeta.virgingates.com/api/v1/trips/9921381276774878/cancel -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-type: application/json" -d '{"branchId": 2165529378315486700, "cancellationReason": "Order Taking Too Long"}'
+        curl -X POST https://srvstg.virgingates.com/api/v1/trips/9921381276774878/cancel -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-type: application/json" -d '{"branchId": 2165529378315486700, "cancellationReason": "Order Taking Too Long"}'
     title: cURL
     language: bash
 right_code_blocks:
+  - code_block: |-
+      {
+          "branchId": 2165529378315486700,
+          "cancellationReason": "Order Taking Too Long"
+      }
+    title: Request
+    language: json
   - code_block: |-
       {
           "tripStatus": "CANCELLED"

@@ -8,7 +8,7 @@ parameters:
 content_markdown: |-
   To get you started, the Planman team will create a branch entity for each of your branches. Each branch will have a unique code that can be used for authentication. The branch codes will be provided to you by the Planman team.
   
-  Furthermore, each branch serves a variety of delivery zones based on different rates. In other words, each branch can deliver orders to those specific zones.
+  Furthermore, each branch serves a variety of zones based on different pricing rates.
 
   You can test your integration with Planman on our staging environment before deploying to production.
   {: .info }

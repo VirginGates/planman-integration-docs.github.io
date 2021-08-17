@@ -12,19 +12,19 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Integer | true |  ......................... |
+  | id | Long | true |  ......................... |
 
   __Response Fields__
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Integer | ........................ |
+  | id | Long | ........................ |
   | vendorBranch | Object | ........................ |
-  | vendorBranch.id | Integer | ........................ |
+  | vendorBranch.id | Long | ........................ |
   | vendorBranch.label | String |  ........................  |
-  | vendorBranch.vendorId | Integer |  ........................  |
+  | vendorBranch.vendorId | Long |  ........................  |
   | pilot | Object | ........................ |
-  | pilot.id | Integer | ........................ |
+  | pilot.id | Long | ........................ |
   | pilot.mobileNo | String | ........................ |
   | pilot.fullName | String | ........................ |
   | pilot.lastKnownLocation | Object | ........................ |
@@ -43,7 +43,7 @@ content_markdown: |-
   | distanceInMeters | Integer | ........................ |
   | durationInSeconds | Integer | ........................ |
   | tasks | Array | ........................ |
-  | tasks[0].id | Integer | ........................ |
+  | tasks[0].id | Long | ........................ |
   | tasks[0].sequence | Integer | ........................ |
   | tasks[0].distanceInMeters | Integer | ........................ |
   | tasks[0].distanceFromLastTaskInMeters | Integer | ........................ |
@@ -56,15 +56,15 @@ content_markdown: |-
   | tasks[0].status | String | ........................ |
   | tasks[0].linkStatus | String | ........................ |
   | tasks[0].customer | Object | ........................ |
-  | tasks[0].customer.id | Integer | ........................ |
-  | tasks[0].customer.addressId | Integer | ........................ |
+  | tasks[0].customer.id | Long | ........................ |
+  | tasks[0].customer.addressId | Long | ........................ |
   | tasks[0].customer.mobileNo | String | ........................ |
   | hasOnlineOrder | Boolean | ........................ |
   
 
 left_code_blocks:
   - code_block: |-
-      curl "https://srvbeta.virgingates.com/api/v1/trips/9921381276774878" -H "Authorization: Bearer $ACCESS_TOKEN"
+      curl "https://srvstg.virgingates.com/api/v1/trips/9921381276774878" -H "Authorization: Bearer $ACCESS_TOKEN"
     title: cURL
     language: bash
 right_code_blocks:
