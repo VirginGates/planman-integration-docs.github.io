@@ -1,17 +1,51 @@
 ---
 title: /api/v1/trips
 name: List Trips
-position_number: 1.6
+position_number: 1.5
 type: get
 description: Returns various information about multiple trips filtered by criteria and/or sorted by one of trips's properties in ascending/descending order.
 query_parameters:
-  - name: criteria
-    content: String
-  - name: sortBy
-    content: String
-  - name: sortType
-    content: String
+  - name: 
+    content: 
+  - name: 
+    content: 
+  - name: 
+    content:
 content_markdown: |-
+  __Query Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | criteria | String | true |  ......................... |
+  | sortBy | String | true |  ......................... |
+  | sortType | String | true |  ......................... |
+
+  __Response Fields__
+
+  | Name | Type | Description |
+  | --- | --- | --- |
+  | id | Integer | ........................ |
+  | vendorBranch | Object | ........................ |
+  | vendorBranch.id | Integer | ........................ |
+  | vendorBranch.label | String |  ........................  |
+  | vendorBranch.vendorId | Integer |  ........................  |
+  | pilot | Object | ........................ |
+  | pilot.id | Integer | ........................ |
+  | pilot.mobileNo | String | ........................ |
+  | pilot.fullName | String | ........................ |
+  | pilot.lastKnownLocation | Object | ........................ |
+  | pilot.lastKnownLocation.type | String | ........................ |
+  | pilot.lastKnownLocation.coordinates | Array | ........................ |
+  | pilot.status | String |  ........................  |
+  | status | String |  ........................  |
+  | assignmentDate | String | ........................ |
+  | pendingCollectionDate | String | ........................ |
+  | creationDate | String | ........................ |
+  | eta | Integer | ........................ |
+  | slaTier | String | ........................ |
+  | maxAllowedTasksCount | Integer | ........................ |
+  | requestedTasksCount | Integer | ........................ |
+  
   Returns a maximum of 800 trips.
   {: .info }
 

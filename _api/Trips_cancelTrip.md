@@ -1,18 +1,36 @@
 ---
 title: /api/v1/trips/:id/cancel
 name: Cancel a Trip
-position_number: 1.5
+position_number: 1.6
 type: post
 description: Cancels the trip specified by the requested ID.
 path_parameters:
-  - name: id
-    content: Integer
+  - name: 
+    content: 
 body_parameters:
-  - name: branchId
-    content: Integer
-  - name: cancellationReason
-    content: String
+  - name: 
+    content: 
+  - name: 
+    content: 
 content_markdown: |-
+  __Path Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | id | integer | true |  ......................... |
+
+  __Body Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | branchId | Integer | true |  ......................... |
+  | cancellationReason | String | true |  ......................... |
+
+  __Response Fields__
+
+  | Name | Type | Description |
+  | --- | --- | --- | 
+  | tripStatus | Enum | ......................... |
 
 left_code_blocks:
   - code_block: |- 

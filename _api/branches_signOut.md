@@ -3,11 +3,22 @@ title: /api/v1/branches/:id/sign-out
 name: Sign Out
 position_number: 1.1
 type: post
-description: Allows you to sign out of the branch dashboard.
+description: Allows you to sign out using your branch ID.
 path_parameters:
-  - name: id
-    content: Integer
+  - name:
+    content: 
 content_markdown: |-
+  __Path Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | id | Integer | true | ......................... |
+
+  __Response Fields__
+
+  | Name | Type | Description |
+  | --- | --- | --- |
+  | id | Integer | ......................... |
 
 left_code_blocks:
   - code_block: |- 

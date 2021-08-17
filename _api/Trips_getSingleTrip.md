@@ -5,9 +5,62 @@ position_number: 1.4
 type: get
 description: Returns various information about a single trip specified by the requested ID.
 path_parameters:
-  - name: id
-    content: Integer
+  - name: 
+    content: 
 content_markdown: |-
+  __Path Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | id | Integer | true |  ......................... |
+
+  __Response Fields__
+
+  | Name | Type | Description |
+  | --- | --- | --- |
+  | id | Integer | ........................ |
+  | vendorBranch | Object | ........................ |
+  | vendorBranch.id | Integer | ........................ |
+  | vendorBranch.label | String |  ........................  |
+  | vendorBranch.vendorId | Integer |  ........................  |
+  | pilot | Object | ........................ |
+  | pilot.id | Integer | ........................ |
+  | pilot.mobileNo | String | ........................ |
+  | pilot.fullName | String | ........................ |
+  | pilot.lastKnownLocation | Object | ........................ |
+  | pilot.lastKnownLocation.type | String | ........................ |
+  | pilot.lastKnownLocation.coordinates | Array | ........................ |
+  | pilot.status | String |  ........................  |
+  | status | String |  ........................  |
+  | assignmentDate | String | ........................ |
+  | creationDate | String | ........................ |
+  | lastUpdateDate | String | ........................ |
+  | routeDataEnriched | Boolean | ........................ |
+  | eta | Integer | ........................ |
+  | slaTier | String | ........................ |
+  | maxAllowedTasksCount | Integer | ........................ |
+  | requestedTasksCount | Integer | ........................ |
+  | distanceInMeters | Integer | ........................ |
+  | durationInSeconds | Integer | ........................ |
+  | tasks | Array | ........................ |
+  | tasks[0].id | Integer | ........................ |
+  | tasks[0].sequence | Integer | ........................ |
+  | tasks[0].distanceInMeters | Integer | ........................ |
+  | tasks[0].distanceFromLastTaskInMeters | Integer | ........................ |
+  | tasks[0].durationInSeconds | Integer | ........................ |
+  | tasks[0].durationSinceLastTask | Integer | ........................ |
+  | tasks[0].pinnedDestinationPoint | Object | ........................ |
+  | tasks[0].pinnedDestinationPoint.type | String | ........................ |
+  | tasks[0].pinnedDestinationPoint.coordinates | Array | ........................ |
+  | tasks[0].reachedDestinationDate | String | ........................ |
+  | tasks[0].status | String | ........................ |
+  | tasks[0].linkStatus | String | ........................ |
+  | tasks[0].customer | Object | ........................ |
+  | tasks[0].customer.id | Integer | ........................ |
+  | tasks[0].customer.addressId | Integer | ........................ |
+  | tasks[0].customer.mobileNo | String | ........................ |
+  | hasOnlineOrder | Boolean | ........................ |
+  
 
 left_code_blocks:
   - code_block: |-

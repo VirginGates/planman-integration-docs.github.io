@@ -6,7 +6,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  This documentation provides a guide for integrating and working with the Planman REST API. After successful integration, you can utilize Planman's on-demand delivery platform along with all its unique features.
+  This documentation provides a guide for integrating and working with the Planman REST API. After successful integration, you can utilize Planman's on-demand delivery management system along with all its unique features.
   
   Planman API provides you with the ability to request a delivery for your order and have that order delivered by one of our affiliated operators.
   

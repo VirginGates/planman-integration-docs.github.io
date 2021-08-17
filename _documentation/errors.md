@@ -1,7 +1,7 @@
 ---
 title: Errors
 name: Errors
-position_number: 4
+position_number: 5
 parameters:
   - name:
     content:
@@ -20,7 +20,9 @@ left_code_blocks:
       {
         "stackTraceId": 2165529378315486700,
         "args": {
-          "additionalProp1": {}
+          "additionalProp1": {},
+          "additionalProp2": {},
+          "additionalProp3": {},
         },
         "devDetails": "string",
         "propagated": false,

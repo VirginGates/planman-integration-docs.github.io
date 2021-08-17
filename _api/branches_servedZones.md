@@ -5,9 +5,26 @@ position_number: 1.2
 type: get
 description: Retrieves a list of zones that are served by the branch specified by the requested ID .
 path_parameters:
-  - name: id
-    content: Integer
+  - name: 
+    content: 
 content_markdown: |-
+  __Path Parameters__
+
+  | Name | Type | Required | Description |
+  | --- | --- | --- | --- |
+  | id | Integer | true |  ......................... |
+
+  __Response Fields__
+
+  | Name | Type | Description |
+  | --- | --- | --- |
+  | branchLocation | Object | ........................ |
+  | branchLocation.type | String | ........................ |
+  | branchLocation.coordinates | Array |  ........................  |
+  | hubLocation | Object | ........................ |
+  | hubLocation.type | String | ........................ |
+  | hubLocation.coordinates | Array |  ........................  |
+  | zones | Array | ........................ |
 
 left_code_blocks:
   - code_block: |-
