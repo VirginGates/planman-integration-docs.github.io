@@ -2,7 +2,7 @@
 # Site
 
 title: Planman API Documentation
-description: Jekyll template for API documentation.
+description: Planman API documentation.
 url: integration.planman.io
 google_analytics_key:
 permalink: pretty
@@ -43,7 +43,6 @@ defaults:
       type: "api"
     values:
       _hide_content: true
-
 # -----------
 # CloudCannon
 

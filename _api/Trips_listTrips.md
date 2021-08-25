@@ -20,28 +20,18 @@ content_markdown: |-
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Long | ........................ |
-  | vendorBranch | Object | ........................ |
-  | vendorBranch.id | Long | ........................ |
-  | vendorBranch.label | String |  ........................  |
-  | vendorBranch.vendorId | Long |  ........................  |
-  | pilot | Object | ........................ |
-  | pilot.id | Long | ........................ |
-  | pilot.mobileNo | String | ........................ |
-  | pilot.fullName | String | ........................ |
-  | pilot.lastKnownLocation | Object | ........................ |
-  | pilot.lastKnownLocation.type | String | ........................ |
-  | pilot.lastKnownLocation.coordinates | Array | ........................ |
-  | pilot.status | String |  ........................  |
-  | status | String |  ........................  |
-  | assignmentDate | String | ........................ |
-  | pendingCollectionDate | String | ........................ |
-  | creationDate | String | ........................ |
-  | eta | Integer | ........................ |
+  | id | Long | The unique identifier of the trip. |
+  | status | TripStatus |  The current status of the trip.  |
+  | assignmentDate | String | The date the pilot was assigned to the trip. |
+  | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
+  | creationDate | String | The date the trip was created. |
+  | eta | Integer | The estimated time of arrival of the trip. |
   | slaTier | String | ........................ |
-  | maxAllowedTasksCount | Integer | ........................ |
-  | requestedTasksCount | Integer | ........................ |
-  
+  | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
+  | requestedTasksCount | Integer | The number of tasks in the trip. |
+  | vendorBranch | Branch | The branch from which the trip was initiated. |
+  | pilot | Pilot | The pilot assigned to the trip. |
+
   Returns a maximum of 800 trips.
   {: .info }
 

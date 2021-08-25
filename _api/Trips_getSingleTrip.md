@@ -1,6 +1,6 @@
 ---
 title: /api/v1/trips/:id
-name: Retrieve a Trip
+name: Retrieve Trip
 position_number: 1.4
 type: get
 description: Returns various information about a single trip specified by the requested ID.
@@ -12,53 +12,27 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Long | true |  ......................... |
+  | id | Long | true | The unique identifier of the trip. |
 
   __Response Fields__
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Long | ........................ |
-  | vendorBranch | Object | ........................ |
-  | vendorBranch.id | Long | ........................ |
-  | vendorBranch.label | String |  ........................  |
-  | vendorBranch.vendorId | Long |  ........................  |
-  | pilot | Object | ........................ |
-  | pilot.id | Long | ........................ |
-  | pilot.mobileNo | String | ........................ |
-  | pilot.fullName | String | ........................ |
-  | pilot.lastKnownLocation | Object | ........................ |
-  | pilot.lastKnownLocation.type | String | ........................ |
-  | pilot.lastKnownLocation.coordinates | Array | ........................ |
-  | pilot.status | String |  ........................  |
-  | status | String |  ........................  |
-  | assignmentDate | String | ........................ |
-  | creationDate | String | ........................ |
-  | lastUpdateDate | String | ........................ |
+  | id | Long | The unique identifier of the trip. |
+  | status | TripStatus |  The current status of the trip. |
+  | assignmentDate | String | The date the pilot was assigned to the trip. |
+  | creationDate | String |  The date the trip was created. |
+  | lastUpdateDate | String | The date of the last trip update.  |
   | routeDataEnriched | Boolean | ........................ |
-  | eta | Integer | ........................ |
+  | eta | Integer | The estimated time of arrival of the trip. |
   | slaTier | String | ........................ |
-  | maxAllowedTasksCount | Integer | ........................ |
-  | requestedTasksCount | Integer | ........................ |
+  | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip.  |
+  | requestedTasksCount | Integer | The number of tasks in the trip. |
   | distanceInMeters | Integer | ........................ |
   | durationInSeconds | Integer | ........................ |
-  | tasks | Array | ........................ |
-  | tasks[0].id | Long | ........................ |
-  | tasks[0].sequence | Integer | ........................ |
-  | tasks[0].distanceInMeters | Integer | ........................ |
-  | tasks[0].distanceFromLastTaskInMeters | Integer | ........................ |
-  | tasks[0].durationInSeconds | Integer | ........................ |
-  | tasks[0].durationSinceLastTask | Integer | ........................ |
-  | tasks[0].pinnedDestinationPoint | Object | ........................ |
-  | tasks[0].pinnedDestinationPoint.type | String | ........................ |
-  | tasks[0].pinnedDestinationPoint.coordinates | Array | ........................ |
-  | tasks[0].reachedDestinationDate | String | ........................ |
-  | tasks[0].status | String | ........................ |
-  | tasks[0].linkStatus | String | ........................ |
-  | tasks[0].customer | Object | ........................ |
-  | tasks[0].customer.id | Long | ........................ |
-  | tasks[0].customer.addressId | Long | ........................ |
-  | tasks[0].customer.mobileNo | String | ........................ |
+  | vendorBranch | Branch | The branch from which the trip was initiated. |
+  | pilot | Pilot | The pilot assigned to the trip. |
+  | tasks | Array | An array containig all the tasks in the trip. |
   | hasOnlineOrder | Boolean | ........................ |
   
 

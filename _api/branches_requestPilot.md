@@ -1,6 +1,6 @@
 ---
 title: /api/v1/branches/:id/request-pilot
-name: Request a Pilot
+name: Request Pilot
 position_number: 1.3
 type: post
 description: Requests a pilot for the branch specified by the requested ID and creates a new trip.
@@ -12,7 +12,7 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Long | true |  ......................... |
+  | id | Long | true | The unique identifier of the branch. |
 
   __Response Fields__
 

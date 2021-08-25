@@ -12,13 +12,13 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Long | true | ......................... |
+  | id | Long | true | The unique identifier of the branch. |
 
   __Response Fields__
 
   | Name | Type | Description |
   | --- | --- | --- |
-  | id | Long | ......................... |
+  | id | Long | The unique identifier of the branch. |
 
 left_code_blocks:
   - code_block: |- 

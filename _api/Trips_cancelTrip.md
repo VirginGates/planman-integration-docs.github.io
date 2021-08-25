@@ -1,9 +1,9 @@
 ---
 title: /api/v1/trips/:id/cancel
-name: Cancel a Trip
+name: Cancel Trip
 position_number: 1.6
 type: post
-description: Cancels the trip specified by the requested ID.
+description: Cancels the trip specified by the requested ID. Trip status must not be "OPENED".
 parameters:
   - name: 
     content:
@@ -12,20 +12,20 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | id | Long | true |  ......................... |
+  | id | Long | true |  The unique identifier of the trip. |
 
   __Body Parameters__
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | branchId | Long | true |  ......................... |
-  | cancellationReason | String | true |  ......................... |
+  | branchId | Long | true | The unique identifier of the branch. |
+  | cancellationReason | String | true | The reason for the trip cancellation. |
 
   __Response Fields__
 
   | Name | Type | Description |
   | --- | --- | --- | 
-  | tripStatus | Enum | ......................... |
+  | tripStatus | TripStatus | The updated status of the trip. |
 
 left_code_blocks:
   - code_block: |- 
