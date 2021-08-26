@@ -24,7 +24,7 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |- 
-      curl -X POST https://srvstg.virgingates.com/api/v1/branches/2165529378315486700/request-pilot -H "Authorization: Bearer $ACCESS_TOKEN"'
+      curl -X POST https://srvstg.virgingates.com/api/v1/branches/2165529378315486700/request-pilot -H "Authorization: Bearer $ACCESS_TOKEN"
     title: cURL
     language: bash
 right_code_blocks:
