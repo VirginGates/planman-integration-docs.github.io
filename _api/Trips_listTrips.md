@@ -26,7 +26,7 @@ content_markdown: |-
   | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
   | creationDate | String | The date the trip was created. |
   | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | Refers to the service-level agreement between the vendor and the operator. |
+  | slaTier | String | Refers to the service-level agreement between the vendor and the fleet operator. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
   | vendorBranch | Branch | The branch from which the trip was initiated. |

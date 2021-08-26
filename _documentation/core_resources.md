@@ -42,7 +42,7 @@ content_markdown: |-
   | lastUpdateDate | String | The date of the last trip update. |
   | routeDataEnriched | Boolean | A flag indicating whether the route data was set in the trip. |
   | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | Refers to the service-level agreement between the vendor and the operator. |
+  | slaTier | String | Refers to the service-level agreement between the vendor and the fleet operator. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
   | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the last customer's location. |
