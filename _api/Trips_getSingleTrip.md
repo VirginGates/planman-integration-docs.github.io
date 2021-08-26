@@ -23,18 +23,17 @@ content_markdown: |-
   | assignmentDate | String | The date the pilot was assigned to the trip. |
   | creationDate | String |  The date the trip was created. |
   | lastUpdateDate | String | The date of the last trip update.  |
-  | routeDataEnriched | Boolean | ........................ |
+  | routeDataEnriched | Boolean | A flag indicating whether the route data was set in the trip. |
   | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | ........................ |
+  | slaTier | String | Refers to the service-level agreement between the vendor and the operator. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip.  |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
-  | distanceInMeters | Integer | ........................ |
-  | durationInSeconds | Integer | ........................ |
+  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the customer location. |
+  | durationInSeconds | Integer | The total duration of the trip in seconds. |
   | vendorBranch | Branch | The branch from which the trip was initiated. |
   | pilot | Pilot | The pilot assigned to the trip. |
   | tasks | Array | An array containig all the tasks in the trip. |
-  | hasOnlineOrder | Boolean | ........................ |
-  
+  | hasOnlineOrder | Boolean | A flag indicating whether this trip belongs to an order placed through Survv App. |
 
 left_code_blocks:
   - code_block: |-

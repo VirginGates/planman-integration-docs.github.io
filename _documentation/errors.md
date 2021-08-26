@@ -17,34 +17,21 @@ content_markdown: |-
   | 409 | Conflict | The request could not be processed due to a conflict in the current state of the resource |
   | 500 | Internal Server Error | The server encountered an unexpected condition |
 
-
-  __Response Fields__
-
-  | Name | Type | Description |
-  | --- | --- | --- |
-  | stackTraceId | Long | ........................ |
-  | args | Object | ........................ |
-  | devDetails | String |  ........................  |
-  | propagated | Boolean | ........................ |
-  | trace | Object | ........................ |
-  | code | String |  ........................  |
-
   __Exception Codes__
 
   | Name | Description |
   | --- | --- |
   | MissingParameterException | A required request parameter is missing. |
-  | NotFoundException | ........................ |
-  | UnAuthorizedException | ........................ |
-  | InactiveVendorBranchException | Branch is not active. |
-  | BranchExceedsTripsThresholdException | ........................ |
-  | VendorTierConfigDoesNotExist | ........................ |
-  | WebClientOperationException | ........................ |
-  | InsufficientBalanceException | ........................ |
-  | InvalidParameterException | ........................ |
-  | InvalidTripStatusException | ........................ |
-  | InvalidPilotStatusException | ........................ |
-  | InvalidServiceTypesException | ........................ |
+  | NotFoundException | The requested resource is not found. |
+  | UnAuthorizedException | The branch code used for sign in is not correct. |
+  | InactiveVendorBranchException | The branch is not active. |
+  | BranchExceedsTripsThresholdException | The maximum number of trips per branch has been exceeded. |
+  | VendorTierConfigDoesNotExist | The vendor has no current tier configuration. |
+  | InsufficientBalanceException | The vendor has insufficient balance to request pilot. |
+  | InvalidParameterException | The value of the parameter is not supported. |
+  | InvalidTripStatusException | The trip's status is not as expected for this request to be completed. |
+  | InvalidPilotStatusException | The pilot's status is not as expected for this request to be completed. |
+  | InvalidServiceTypesException | The service type is not as expected for this request to be completed. For example, it could be "B2B" while it's required to be "B2C". |
 
   All errors will return JSON in the following format:
 left_code_blocks:

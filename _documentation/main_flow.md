@@ -6,7 +6,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Planman's main delivery unit is a Trip. For every requested delivery, a new trip entity is created. 
+  Planman's main delivery unit is a Trip. For every requested delivery, a new trip entity is created. Each trip can have multiple tasks, where each task represents an order from the branch by a different customer.
 
   After you sign in using your branch code, you can list the served zones to identify which geographical zones are served by your branch. This can be done using the __List Served Zones__ endpoint. To initiate a delivery, simply call the __Request Pilot__ endpoint, which will create a new trip entity and request a pilot for delivery.
  

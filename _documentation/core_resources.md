@@ -40,13 +40,13 @@ content_markdown: |-
   | creationDate | String | The date the trip was created. |
   | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
   | lastUpdateDate | String | The date of the last trip update. |
-  | routeDataEnriched | Boolean | ........................ |
+  | routeDataEnriched | Boolean | A flag indicating whether the route data was set in the trip. |
   | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | ........................ |
+  | slaTier | String | Refers to the service-level agreement between the vendor and the operator. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
-  | requestedTasksCount | Integer | he number of tasks in the trip. |
-  | distanceInMeters | Integer | ........................ |
-  | durationInSeconds | Integer | ........................ |
+  | requestedTasksCount | Integer | The number of tasks in the trip. |
+  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the last customer's location. |
+  | durationInSeconds | Integer | The total duration of the trip in seconds. |
 
   | TripStatus | 
   | --- | 
@@ -63,16 +63,16 @@ content_markdown: |-
   | Name | Type | Description |
   | --- | --- | --- | 
   | id | Long | The unique identifier of the task. |
-  | sequence | Integer | ........................ |
-  | distanceInMeters | Integer | ........................ |
-  | distanceFromLastTaskInMeters | Integer | ........................ |
-  | durationInSeconds | Integer | ........................ |
-  | durationSinceLastTask | Integer | ........................ |
-  | pinnedDestinationPoint | Location | ........................ |
-  | reachedDestinationDate | String | ........................ |
+  | sequence | Integer | Indicates the order of delivery of this task relative to the other tasks in the same trip. |
+  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the customer's location. |
+  | distanceFromLastTaskInMeters | Integer | The distance between this task's delivery location and the previous task in the same trip's delivery location. |
+  | durationInSeconds | Integer | The total duration between the task's request date and delivery date. |
+  | durationSinceLastTask | Integer | The duration since the delivery date of the previous task in the same trip. |
+  | pinnedDestinationPoint | Location | The customer's location where this task was/is being delivered. |
+  | reachedDestinationDate | String | The date that this task reached the customer location. |
   | status | TaskStatus | The current status of the task. |
-  | linkStatus | String | ........................ |
-  | customer | Customer | .............. |
+  | linkStatus | String | Indicates whether the customer location was entered by the pilot and can be linked to this task or not. |
+  | customer | Customer | The customer for whom this task belongs. |
 
   | TaskStatus | 
   | --- | 
@@ -118,15 +118,15 @@ content_markdown: |-
 
   | Name | Type | Description |
   | --- | --- | --- | 
-  | en | String | Name in english. | 
-  | ar | String | Name in arabic. |
+  | en | String | String representation in English. | 
+  | ar | String | String representation in Arabic. |
 
   __MoneyWithCurrency__
 
   | Name | Type | Description |
   | --- | --- | --- | 
-  | amount | Double | ........................ | 
-  | currency | String | ........................ |
+  | amount | Double | The exact amount of money. | 
+  | currency | String | The currency of the money, for example "EGP". |
 
 
 

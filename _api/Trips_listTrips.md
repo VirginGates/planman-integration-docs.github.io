@@ -12,9 +12,9 @@ content_markdown: |-
 
   | Name | Type | Required | Description |
   | --- | --- | --- | --- |
-  | criteria | String | true |  ......................... |
-  | sortBy | String | true |  ......................... |
-  | sortType | String | true |  ......................... |
+  | criteria | String | true | Used for filtering the trips returned, for example criteria={"status":["CANCELLED"]} |
+  | sortBy | String | true | Used for sorting the trips returned based on one of the trip's properties. |
+  | sortType | String | true | Indicates whether sorting will be done in ascending or descending order. |
 
   __Response Fields__
 
@@ -26,7 +26,7 @@ content_markdown: |-
   | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
   | creationDate | String | The date the trip was created. |
   | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | ........................ |
+  | slaTier | String | Refers to the service-level agreement between the vendor and the operator. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
   | vendorBranch | Branch | The branch from which the trip was initiated. |

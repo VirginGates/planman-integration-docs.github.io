@@ -10,11 +10,11 @@ content_markdown: |-
   
   Furthermore, each branch serves a variety of zones based on different pricing rates.
 
+  The production API base URL will be provided to you by our team after successful integration. 
+
   You can test your integration with Planman on our staging environment before deploying to production.
   {: .info }
   - Staging API Base URL: https://srvstg.virgingates.com
-
-  - Production API Base URL: https://srvbeta.virgingates.com
 
 #
 left_code_blocks:
