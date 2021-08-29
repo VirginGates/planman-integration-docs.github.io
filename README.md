@@ -5,15 +5,15 @@
 3. Add your site and author details in `_config.yml`.
 
 ## Develop
-Install Jekyll and its dependencies by following these steps: https://jekyllrb.com/docs/installation/ubuntu/
-
-Install the dependencies with [Bundler](http://bundler.io/):
+1. Install Jekyll and its dependencies by following these steps: https://jekyllrb.com/docs/installation/ubuntu/
+2. Go to the directory /planman-integration-docs.github.io
+3. Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
 $ bundle install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+4. Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
 $ bundle exec jekyll serve
