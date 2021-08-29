@@ -21,8 +21,6 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Aviator is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
 ### Usage
 
 * Each section is a different collection, this helps organise your content.
