@@ -2,15 +2,12 @@
 title: Authentication
 name: Authentication
 position_number: 3
-parameters:
-  - name:
-    content:
 content_markdown: |-
   Authentication is required for all API requests. Planman API uses bearer access tokens to authenticate requests. To get an access token, you can sign in using your branch code through our sign in endpoint. The access token's lifetime is 18 hours. Whenever it expires, you need to call the sign in endpoint to have a new one generated.
 
   The access token should be added as a request header as shown below.
 
-  None of the requests will succeed unless you include a correct access token in the request header.
+  Apart from the sign in endpoint, none of the requests will succeed unless you include a correct access token in the request header.
   {: .error}
 
 left_code_blocks:

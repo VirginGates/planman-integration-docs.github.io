@@ -4,9 +4,6 @@ name: Request Pilot
 position_number: 1.3
 type: post
 description: Requests a pilot for the branch specified by the requested ID and creates a new trip.
-parameters:
-  - name: 
-    content: 
 content_markdown: |-
   __Path Parameters__
 

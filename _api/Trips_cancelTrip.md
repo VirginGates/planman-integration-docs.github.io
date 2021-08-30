@@ -4,9 +4,6 @@ name: Cancel Trip
 position_number: 1.6
 type: post
 description: Cancels the trip specified by the requested ID. Trip status must not be "OPENED".
-parameters:
-  - name: 
-    content:
 content_markdown: |-
   __Path Parameters__
 

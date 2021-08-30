@@ -4,9 +4,6 @@ name: List Served Zones
 position_number: 1.2
 type: get
 description: Retrieves a list of zones that are served by the branch specified by the requested ID.
-parameters:
-  - name: 
-    content: 
 content_markdown: |-
   __Path Parameters__
 

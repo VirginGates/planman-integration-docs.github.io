@@ -4,9 +4,6 @@ name: List Trips
 position_number: 1.5
 type: get
 description: Returns various information about multiple trips filtered by criteria and/or sorted by one of trips's properties in ascending/descending order.
-parameters:
-  - name: 
-    content:
 content_markdown: |-
   __Query Parameters__
 
@@ -18,6 +15,8 @@ content_markdown: |-
 
   __Response Fields__
 
+  Returns an array of trip objects with the following fields:
+
   | Name | Type | Description |
   | --- | --- | --- |
   | id | Long | The unique identifier of the trip. |
@@ -25,8 +24,8 @@ content_markdown: |-
   | assignmentDate | String | The date the pilot was assigned to the trip. |
   | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
   | creationDate | String | The date the trip was created. |
-  | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | Refers to the service-level agreement between the vendor and the fleet operator. |
+  | eta | Long | The estimated time of arrival of the pilot to the branch. |
+  | slaTier | String | Refers to the time taken for the trip to be dispatched after it was created. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
   | vendorBranch | Branch | The branch from which the trip was initiated. |

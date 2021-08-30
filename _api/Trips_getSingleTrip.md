@@ -4,9 +4,6 @@ name: Retrieve Trip
 position_number: 1.4
 type: get
 description: Returns various information about a single trip specified by the requested ID.
-parameters:
-  - name: 
-    content: 
 content_markdown: |-
   __Path Parameters__
 
@@ -24,12 +21,12 @@ content_markdown: |-
   | creationDate | String |  The date the trip was created. |
   | lastUpdateDate | String | The date of the last trip update.  |
   | routeDataEnriched | Boolean | A flag indicating whether the route data was set in the trip. |
-  | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | Refers to the service-level agreement between the vendor and the fleet operator. |
+  | eta | Long | The estimated time of arrival of the pilot to the branch. |
+  | slaTier | String | Refers to the time taken for the trip to be dispatched after it was created. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip.  |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
-  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the customer location. |
-  | durationInSeconds | Integer | The total duration of the trip in seconds. |
+  | distanceInMeters | Double | The total distance of the route taken by the pilot from the branch's location to the customer location. |
+  | durationInSeconds | Long | The total duration of the trip in seconds. |
   | vendorBranch | Branch | The branch from which the trip was initiated. |
   | pilot | Pilot | The pilot assigned to the trip. |
   | tasks | Array | An array containig all the tasks in the trip. |

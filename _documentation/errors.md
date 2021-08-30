@@ -2,9 +2,6 @@
 title: Errors
 name: Errors
 position_number: 5
-parameters:
-  - name:
-    content:
 content_markdown: |- 
   __HTTP response codes__
 
@@ -23,10 +20,10 @@ content_markdown: |-
   | --- | --- |
   | MissingParameterException | A required request parameter is missing. |
   | NotFoundException | The requested resource is not found. |
-  | UnAuthorizedException | The branch code used for sign in is not correct. |
+  | UnAuthorizedException | The branch code used for sign in is not correct, or the bearer token is not valid. |
   | InactiveVendorBranchException | The branch is not active. |
-  | BranchExceedsTripsThresholdException | The maximum number of trips per branch has been exceeded. |
-  | VendorTierConfigDoesNotExist | The vendor has no current tier configuration. |
+  | BranchExceedsTripsThresholdException | The maximum number of concurrent trips per branch has been exceeded. |
+  | VendorTierConfigDoesNotExist | The vendor has no current pricing configuration. |
   | InsufficientBalanceException | The vendor has insufficient balance to request pilot. |
   | InvalidParameterException | The value of the parameter is not supported. |
   | InvalidTripStatusException | The trip's status is not as expected for this request to be completed. |

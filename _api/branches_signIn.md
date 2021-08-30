@@ -4,9 +4,6 @@ name: Sign In
 position_number: 1.0
 type: post
 description: Allows you to sign in using your branch code and receive an access token, which is required for performing calls to other endpoints of the API.
-parameters:
-  - name: 
-    content:
 content_markdown: |-
   __Body Parameters__
 

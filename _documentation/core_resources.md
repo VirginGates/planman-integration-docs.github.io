@@ -2,9 +2,6 @@
 title: Core Resources
 name: Core Resources
 position_number: 6
-parameters:
-  - name:
-    content:
 content_markdown: |-
   
   __Branch__
@@ -25,6 +22,8 @@ content_markdown: |-
 
   __Location__
 
+  Represents the standard GeoJSON object.
+
   | Name | Type | Description |
   | --- | --- | --- |
   | type | String | A string indicating whether this location is a "Point" or a "Polygon" |
@@ -35,18 +34,18 @@ content_markdown: |-
   | Name | Type | Description |
   | --- | --- | --- | 
   | id | Long | The unique identifier of the trip. |
-  | status | TripStatus Enum  | The updated status of the trip. |
+  | status | TripStatus | The updated status of the trip. |
   | assignmentDate | String | The date the pilot was assigned to the trip. |
   | creationDate | String | The date the trip was created. |
   | pendingCollectionDate | String | The date the tasks of the trip were ready for collection. |
   | lastUpdateDate | String | The date of the last trip update. |
   | routeDataEnriched | Boolean | A flag indicating whether the route data was set in the trip. |
-  | eta | Integer | The estimated time of arrival of the trip. |
-  | slaTier | String | Refers to the service-level agreement between the vendor and the fleet operator. |
+  | eta | Long | The estimated time of arrival of the pilot to the branch. |
+  | slaTier | SlaTier | Refers to the time taken for the trip to be dispatched after it was created. |
   | maxAllowedTasksCount | Integer | The maximum allowed number of tasks per trip. |
   | requestedTasksCount | Integer | The number of tasks in the trip. |
-  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the last customer's location. |
-  | durationInSeconds | Integer | The total duration of the trip in seconds. |
+  | distanceInMeters | Double | The total distance of the route taken by the pilot from the branch's location to the last customer's location. |
+  | durationInSeconds | Long | The total duration of the trip in seconds. |
 
   | TripStatus | 
   | --- | 
@@ -58,15 +57,20 @@ content_markdown: |-
   | CANCELLED |
   | NONE |
 
+  | SlaTier | 
+  | --- | 
+  | LESS_THAN_5_MINUTES |
+  | MORE_THAN_20_MINUTES |
+
   __Task__
 
   | Name | Type | Description |
   | --- | --- | --- | 
   | id | Long | The unique identifier of the task. |
   | sequence | Integer | Indicates the order of delivery of this task relative to the other tasks in the same trip. |
-  | distanceInMeters | Integer | The total distance of the route taken by the pilot from the branch's location to the customer's location. |
-  | distanceFromLastTaskInMeters | Integer | The distance between this task's delivery location and the previous task in the same trip's delivery location. |
-  | durationInSeconds | Integer | The total duration between the task's request date and delivery date. |
+  | distanceInMeters | Double | The total distance of the route taken by the pilot from the branch's location to the customer's location. |
+  | distanceFromLastTaskInMeters | Double | The distance between this task's delivery location and the previous task in the same trip's delivery location. |
+  | durationInSeconds | Long | The total duration between the task's request date and delivery date. |
   | durationSinceLastTask | Integer | The duration since the delivery date of the previous task in the same trip. |
   | pinnedDestinationPoint | Location | The customer's location where this task was/is being delivered. |
   | reachedDestinationDate | String | The date that this task reached the customer location. |
@@ -102,16 +106,16 @@ content_markdown: |-
 
   | PilotStatus |
   | --- |
-  | CANDIDATE |
-  | UNAVAILABLE |
-  | AVAILABLE |
-  | LOADED |
   | IN_HUB |
+  | CANDIDATE |
   | ASSIGNED |
   | WAITING |
   | COLLECTING |
+  | LOADED |
   | MANUALLY_ASSIGNED |
   | REACHED_PILOT |
+  | UNAVAILABLE |
+  | AVAILABLE |
   | NONE |
 
   __MultilingualString__
