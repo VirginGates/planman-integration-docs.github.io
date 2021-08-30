@@ -23,10 +23,11 @@ $ bundle exec jekyll serve
 
 ### Usage
 
-* Each section is a different collection, this helps organise your content.
-* Set the order of the collections with the position_number field in collection configuration in `_config.yml`.
+* Each section is a different collection.
+* Set the order of the collections with the position_number field in the collection configuration in `_config.yml`.
 * Set the order of the documents inside a collection by setting the position_number field.
-* For each document, type the main content of the section inside the content_markdown field. The left_code_blocks field contains the cURL request sample, while the right_code_blocks field contains the request body, response and error samples in JSON and are rendered in the black section on the right of the page.
+* For each document, type the main content of the section inside the content_markdown field.
+* The left_code_blocks field contains the cURL request sample, while the right_code_blocks field contains the request body, response and error samples in JSON, which are rendered in the black section on the right of the page.
 * For the code blocks, set the language field to have the syntax highlighted based on the language.
 * The index.html is the main html file that is rendered. If you need to access any of the document's fields in index.html, for example the content_markdown field, type doc.content_markdown.
 
