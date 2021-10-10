@@ -1,7 +1,7 @@
 ---
 title: /api/v1/trips/:id
 name: Retrieve Trip
-position_number: 1.4
+position_number: 1.5
 type: get
 description: Returns various information about a single trip specified by the requested ID.
 content_markdown: |-
