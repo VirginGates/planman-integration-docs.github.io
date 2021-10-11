@@ -244,6 +244,13 @@ h3 .endpoint {
 	}
 }
 
+.endpoint.patch {
+	color: #42A5F5;
+	&:after {
+		content: "PATCH";
+	}
+}
+
 .main {
 	margin: 0 0 0 $nav-width;
 	border-left: 1px solid #eee;
