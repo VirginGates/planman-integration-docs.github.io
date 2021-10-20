@@ -1,7 +1,7 @@
 ---
 title: /api/v1/trips/:id/cancel
 name: Cancel Trip
-position_number: 1.6
+position_number: 1.7
 type: post
 description: Cancels the trip specified by the requested ID. Trip status must not be "OPENED".
 content_markdown: |-
