@@ -26,7 +26,7 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |-
-      curl -X POST https://srvstg.virgingates.com/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567"}'
+      curl -X POST https://srvstg.virgingates.com/business/api/v1/branches/sign-in -H "Content-type: application/json" -d '{"code": "1234567"}'
     title: cURL
     language: bash
 right_code_blocks:

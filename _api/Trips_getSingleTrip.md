@@ -34,7 +34,7 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |-
-      curl "https://srvstg.virgingates.com/api/v1/trips/9921381276774878" -H "Authorization: Bearer $ACCESS_TOKEN"
+      curl "https://srvstg.virgingates.com/business/api/v1/trips/9921381276774878" -H "Authorization: Bearer $ACCESS_TOKEN"
     title: cURL
     language: bash
 right_code_blocks:

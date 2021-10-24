@@ -31,7 +31,7 @@ content_markdown: |-
 
 left_code_blocks:
   - code_block: |-
-      curl "https://srvstg.virgingates.com/api/v1/branches/2165529378315486700/served-zones" -H "Authorization: Bearer $ACCESS_TOKEN"
+      curl "https://srvstg.virgingates.com/business/api/v1/branches/2165529378315486700/served-zones" -H "Authorization: Bearer $ACCESS_TOKEN"
     title: cURL
     language: bash
 right_code_blocks:
